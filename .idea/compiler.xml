@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="icc-application" />
+        <module name="icc-application-impl" />
+        <module name="icc-commons" />
+        <module name="icc-exceptions" />
+        <module name="icc-login" />
+        <module name="icc-messages" />
+        <module name="icc-orms" />
+        <module name="icc-rest" />
+        <module name="icc-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="icc" target="1.5" />
+      <module name="icc-application" target="1.7" />
+      <module name="icc-application-impl" target="1.7" />
+      <module name="icc-commons" target="1.7" />
+      <module name="icc-exceptions" target="1.7" />
+      <module name="icc-login" target="1.7" />
+      <module name="icc-messages" target="1.7" />
+      <module name="icc-orms" target="1.7" />
+      <module name="icc-rest" target="1.7" />
+      <module name="icc-web" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

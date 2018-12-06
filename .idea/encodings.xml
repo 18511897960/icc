@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$/icc-application" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/icc-application-impl" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/icc-commons" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/icc-exceptions" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/icc-login" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/icc-messages" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/icc-orms" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/icc-rest" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/icc-web" charset="UTF-8" />
+  </component>
+</project>
