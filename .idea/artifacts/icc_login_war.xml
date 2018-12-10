@@ -7,7 +7,7 @@
         <packaging>war</packaging>
       </options>
     </properties>
-    <root id="archive" name="icc-login-0.0.1-SNAPSHOT.war">
+    <root id="archive" name="icc-login-provider.war">
       <element id="artifact" artifact-name="icc-login:war exploded" />
     </root>
   </artifact>

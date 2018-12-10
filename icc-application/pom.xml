@@ -5,7 +5,7 @@
         <artifactId>icc</artifactId>
         <groupId>com.icc</groupId>
         <version>0.0.1-SNAPSHOT</version>
-    </parent>
+   </parent>
 
   <groupId>com.icc</groupId>
   <artifactId>icc-application</artifactId>

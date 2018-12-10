@@ -55,6 +55,12 @@
             </exclusion>
         </exclusions>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/com.101tec/zkclient -->
+	<dependency>
+	    <groupId>com.101tec</groupId>
+	    <artifactId>zkclient</artifactId>
+	    <version>0.10</version>
+	</dependency>
     <dependency>
         <groupId>org.apache.curator</groupId>
         <artifactId>curator-recipes</artifactId>
@@ -69,10 +75,15 @@
 		<groupId>com.icc</groupId>
 		<artifactId>icc-application</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-	</dependencies>
+	</dependency>
+	<dependency>
+		<groupId>com.icc</groupId>
+		<artifactId>icc-commons</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</dependency>
+</dependencies>
   <build>
-    <finalName>icc-login-provider</finalName>
+    <finalName>icc-login-consumer</finalName>
     <plugins>
 		<plugin>
 			<groupId>org.springframework.boot</groupId>
