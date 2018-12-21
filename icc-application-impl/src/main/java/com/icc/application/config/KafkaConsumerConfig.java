@@ -1,4 +1,4 @@
-package com.icc.web.config;
+package com.icc.application.config;
 
 import java.util.HashMap;
 import java.util.Map;
