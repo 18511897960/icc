@@ -17,17 +17,5 @@
         <module name="icc-web" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="icc" target="1.5" />
-      <module name="icc-application" target="1.7" />
-      <module name="icc-application-impl" target="1.7" />
-      <module name="icc-commons" target="1.7" />
-      <module name="icc-exceptions" target="1.7" />
-      <module name="icc-login" target="1.7" />
-      <module name="icc-messages" target="1.7" />
-      <module name="icc-orms" target="1.7" />
-      <module name="icc-rest" target="1.7" />
-      <module name="icc-web" target="1.7" />
-    </bytecodeTargetLevel>
   </component>
 </project>
