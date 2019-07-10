@@ -18,5 +18,6 @@ public class SocketClientInitalizer extends ChannelInitializer<SocketChannel> {
         pipeline.addLast(new StringEncoder(CharsetUtil.UTF_8));
         pipeline.addLast(new StringDecoder(CharsetUtil.UTF_8));
         pipeline.addLast("SocketClientHandler",new SocketClientHandler());
+        System.out.println("SocketClientHandler.initChannel");
     }
 }

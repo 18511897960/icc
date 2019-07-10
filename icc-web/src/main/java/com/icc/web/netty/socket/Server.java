@@ -13,7 +13,7 @@ public class Server {
         try{
             ServerBootstrap bootstrap = new ServerBootstrap();
             bootstrap.group(serverGroup,clientGroup).channel(NioServerSocketChannel.class)
-                    .childHandler(new SocketServerHandler());
+                    .childHandler(new SocketServerInitalizer());
 
             ChannelFuture future = bootstrap.bind(8899).sync();
             future.channel().closeFuture().sync();

@@ -37,11 +37,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/icc-web/src/main/java/com/icc/web/netty/socket/Server.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="17" column="52" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
+            <state relative-caret-position="-44">
+              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -50,10 +50,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/icc-web/src/main/java/com/icc/web/netty/socket/ServerInitalizer.java">
+        <entry file="file://$PROJECT_DIR$/icc-web/src/main/java/com/icc/web/netty/socket/SocketServerInitalizer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="74" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="22" selection-end-column="74" />
+            <state relative-caret-position="246">
+              <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,8 +64,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/icc-web/src/main/java/com/icc/web/netty/socket/SocketServerHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="64" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="9" selection-end-column="64" />
+            <state relative-caret-position="221">
+              <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,8 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/icc-web/src/main/java/com/icc/web/netty/socket/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+            <state relative-caret-position="202">
+              <caret line="14" column="27" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,11 +85,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/icc-web/src/main/java/com/icc/web/netty/socket/SocketClientInitalizer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+            <state relative-caret-position="236">
+              <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -100,8 +100,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/icc-web/src/main/java/com/icc/web/netty/socket/SocketClientHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+            <state relative-caret-position="66">
+              <caret line="7" column="31" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -121,7 +121,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/icc-web/src/main/java/com/icc/web/netty/http/NettyServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
+            <state relative-caret-position="85">
               <caret line="9" column="59" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="59" />
             </state>
           </provider>
@@ -160,11 +160,11 @@
         <option value="$PROJECT_DIR$/icc-web/src/main/java/com/icc/web/netty/ServerInitializer.java" />
         <option value="$PROJECT_DIR$/icc-web/src/main/java/com/icc/web/netty/http/HttpServerHandler.java" />
         <option value="$PROJECT_DIR$/icc-web/src/main/java/com/icc/web/netty/socket/ServerInitalizer.java" />
-        <option value="$PROJECT_DIR$/icc-web/src/main/java/com/icc/web/netty/socket/SocketServerHandler.java" />
-        <option value="$PROJECT_DIR$/icc-web/src/main/java/com/icc/web/netty/socket/SocketClientInitalizer.java" />
-        <option value="$PROJECT_DIR$/icc-web/src/main/java/com/icc/web/netty/socket/SocketClientHandler.java" />
-        <option value="$PROJECT_DIR$/icc-web/src/main/java/com/icc/web/netty/socket/Client.java" />
         <option value="$PROJECT_DIR$/icc-web/src/main/java/com/icc/web/netty/socket/Server.java" />
+        <option value="$PROJECT_DIR$/icc-web/src/main/java/com/icc/web/netty/socket/Client.java" />
+        <option value="$PROJECT_DIR$/icc-web/src/main/java/com/icc/web/netty/socket/SocketServerHandler.java" />
+        <option value="$PROJECT_DIR$/icc-web/src/main/java/com/icc/web/netty/socket/SocketClientHandler.java" />
+        <option value="$PROJECT_DIR$/icc-web/src/main/java/com/icc/web/netty/socket/SocketClientInitalizer.java" />
       </list>
     </option>
   </component>
@@ -266,17 +266,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="netty" type="462c0819:PsiDirectoryNode" />
-              <item name="http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="icc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="icc" type="462c0819:PsiDirectoryNode" />
-              <item name="icc-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="netty" type="462c0819:PsiDirectoryNode" />
               <item name="socket" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -334,10 +323,11 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="TODO_SCOPE" value="All Places" />
     <property name="ToolWindowAnt Build.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562665086643" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562738845738" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -479,13 +469,14 @@
       <workItem from="1562314095313" duration="4812000" />
       <workItem from="1562569956089" duration="2243000" />
       <workItem from="1562660210150" duration="3663000" />
+      <workItem from="1562737549092" duration="1083000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25169000" />
+    <option name="totallyTimeSpent" value="26252000" />
   </component>
-  <component name="TodoView" selected-index="3">
+  <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -496,9 +487,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5576923" visible="true" weight="0.25642964" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5576923" visible="true" weight="0.2602118" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -507,12 +497,12 @@
       <window_info id="Web" order="6" sideWeight="0.50268817" side_tool="true" weight="0.17729394" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.41467577" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49848714" weight="0.40784982" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49848714" visible="true" weight="0.30375427" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3993174" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.34300342" />
-      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.20477815" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.32935154" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49848714" weight="0.11262798" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5015129" side_tool="true" weight="0.32935154" />
@@ -806,9 +796,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="177">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -816,9 +803,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -826,9 +810,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -857,13 +838,6 @@
           <Categories />
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/icc-web/src/main/java/com/icc/web/netty/http/NettyServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="9" column="59" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="59" />
         </state>
       </provider>
     </entry>
@@ -917,30 +891,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/icc-web/src/main/java/com/icc/web/netty/socket/SocketClientInitalizer.java">
+    <entry file="file://$PROJECT_DIR$/icc-web/src/main/java/com/icc/web/netty/http/NettyServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/icc-web/src/main/java/com/icc/web/netty/socket/ServerInitalizer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="74" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="22" selection-end-column="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="85">
+          <caret line="9" column="59" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/icc-web/src/main/java/com/icc/web/netty/socket/SocketServerHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="64" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="9" selection-end-column="64" />
+        <state relative-caret-position="221">
+          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/icc-web/src/main/java/com/icc/web/netty/socket/SocketServerInitalizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -949,8 +920,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/icc-web/src/main/java/com/icc/web/netty/socket/SocketClientHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+        <state relative-caret-position="66">
+          <caret line="7" column="31" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -959,8 +930,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/icc-web/src/main/java/com/icc/web/netty/socket/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+        <state relative-caret-position="202">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -969,8 +940,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/icc-web/src/main/java/com/icc/web/netty/socket/Server.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="17" column="52" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
+        <state relative-caret-position="-44">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/icc-web/src/main/java/com/icc/web/netty/socket/SocketClientInitalizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

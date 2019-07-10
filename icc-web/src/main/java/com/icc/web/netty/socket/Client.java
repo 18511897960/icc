@@ -13,8 +13,8 @@ public class Client {
         try {
             Bootstrap bootstrap = new Bootstrap();
             bootstrap.group(group).channel(NioSocketChannel.class)
-                    .handler(new SocketClientHandler());
-            ChannelFuture future = bootstrap.bind(8899).sync();
+                    .handler(new SocketClientInitalizer());
+            ChannelFuture future = bootstrap.connect("localhost",8899).sync();
             future.channel().closeFuture().sync();
         }finally {
             group.shutdownGracefully();

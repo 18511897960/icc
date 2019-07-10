@@ -12,7 +12,7 @@ import io.netty.util.CharsetUtil;
 
 import java.nio.charset.Charset;
 
-public class ServerInitalizer extends ChannelInitializer<SocketChannel> {
+public class SocketServerInitalizer extends ChannelInitializer<SocketChannel> {
     @Override
     protected void initChannel(SocketChannel ch) throws Exception {
         ChannelPipeline pipeline = ch.pipeline();
