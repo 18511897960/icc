@@ -2,20 +2,22 @@
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
-    <file type="web" url="file://$PROJECT_DIR$/icc-application-impl" />
-    <file type="web" url="file://$PROJECT_DIR$/icc-login" />
-    <file type="web" url="file://$PROJECT_DIR$/icc-messages" />
     <file type="web" url="file://$PROJECT_DIR$/icc-rest" />
-    <file type="web" url="file://$PROJECT_DIR$/icc-web" />
+    <file type="web" url="file://$PROJECT_DIR$/messages" />
+    <file type="web" url="file://$PROJECT_DIR$/protal" />
+    <file type="web" url="file://$PROJECT_DIR$/provider" />
+    <file type="web" url="file://$PROJECT_DIR$/support" />
+    <file type="web" url="file://$PROJECT_DIR$/website" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/commons/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" project-jdk-name="1.7" project-jdk-type="JavaSDK">
-    <output url="file://$PROJECT_DIR$/out" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" default="false" project-jdk-name="1.7" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/classes" />
   </component>
 </project>

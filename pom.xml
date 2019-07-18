@@ -5,17 +5,17 @@
   <artifactId>icc</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>1.4.0.RELEASE</version>
+  </parent>
   <modules>
-    <module>icc-commons</module>
-    <module>icc-login</module>
-    <module>icc-application</module>
-    <module>icc-application-impl</module>
-    <module>icc-orms</module>
-    <module>icc-rest</module>
-    <module>icc-exceptions</module>
-    <module>icc-web</module>
-    <module>icc-messages</module>
+    <module>commons</module>
+    <module>website</module>
+    <module>support</module>
+    <module>provider</module>
+    <module>protal</module>
+    <module>messages</module>
   </modules>
-
-
 </project>

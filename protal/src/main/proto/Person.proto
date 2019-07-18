@@ -1,0 +1,18 @@
+syntax = "proto3";
+package  com.icc.web.netty.protobuf3;
+
+option java_package = "com.icc.web.netty.protobuf3";
+option java_outer_classname = "DataInfo";
+option java_multiple_files = true;
+
+message RequestHeader {
+     int32 id = 1;
+}
+
+message ResponseHeader {
+    int32 id = 1;
+}
+
+service PersonService {
+    rpc find(RequestHeader)  returns (ResponseHeader){}
+}

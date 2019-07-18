@@ -6,16 +6,24 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="icc-application" />
-        <module name="icc-application-impl" />
-        <module name="icc-commons" />
-        <module name="icc-exceptions" />
-        <module name="icc-login" />
-        <module name="icc-messages" />
-        <module name="icc-orms" />
-        <module name="icc-rest" />
-        <module name="icc-web" />
+        <module name="icc.application" />
+        <module name="icc.application.impl" />
+        <module name="icc.commons" />
+        <module name="icc.login" />
+        <module name="icc.messages" />
+        <module name="icc.portal" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="icc-application" target="1.7" />
+      <module name="icc-application-impl" target="1.7" />
+      <module name="icc-commons" target="1.7" />
+      <module name="icc-exceptions" target="1.7" />
+      <module name="icc-login" target="1.7" />
+      <module name="icc-messages" target="1.7" />
+      <module name="icc-orms" target="1.7" />
+      <module name="icc-rest" target="1.7" />
+      <module name="icc-web" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>

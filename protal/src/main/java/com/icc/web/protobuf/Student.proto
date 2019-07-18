@@ -1,0 +1,37 @@
+syntax = "proto2";
+package  com.icc.protobuf;
+option optimize_for = SPEED;
+option java_package = "com.icc.web.netty.protobuf";
+option java_outer_classname = "DataInfo";
+message MessageType{
+    enum DataType {
+        PersonType = 1;
+        StudentType = 2;
+        ChildType = 3;
+    }
+    required DataType data_type = 1;
+    oneof DataBody {
+        Person person = 2;
+        Student student = 3;
+        Child child = 4;
+    }
+}
+
+
+message Student {
+    required string name = 1;
+    required int32 id = 2;
+    optional string age = 3;
+}
+
+message Person {
+    required string name=1;
+    required int32 id = 2;
+    optional string age = 3;
+}
+
+message Child {
+    required string name=1;
+    required int32 id = 2;
+    optional string age=3;
+}
