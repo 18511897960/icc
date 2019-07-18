@@ -12,8 +12,7 @@ public class GrpcClient {
         ManagedChannel channel = ManagedChannelBuilder.
                 forAddress("localhost",8899).usePlaintext().build();
         /*PersonServiceGrpc.PersonServiceBlockingStub stub = PersonServiceGrpc.newBlockingStub(channel);
-        ResponseHeader response;
-        response = stub.find(RequestHeader.newBuilder().setId(31).build());
+        ResponseHeader response = stub.find(RequestHeader.newBuilder().setId(31).build());
         System.out.println("client message:" + response.getId());
         channel.shutdown().awaitTermination(5, TimeUnit.SECONDS);*/
         System.out.println("--------------------------------");
