@@ -59,6 +59,102 @@ public final class PersonServiceGrpc {
      return getFindMethod;
   }
 
+  private static volatile io.grpc.MethodDescriptor<com.icc.web.netty.protobuf3.RequestHeader,
+      com.icc.web.netty.protobuf3.ResponseHeaderList> getFindRequestStreamMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "findRequestStream",
+      requestType = com.icc.web.netty.protobuf3.RequestHeader.class,
+      responseType = com.icc.web.netty.protobuf3.ResponseHeaderList.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.CLIENT_STREAMING)
+  public static io.grpc.MethodDescriptor<com.icc.web.netty.protobuf3.RequestHeader,
+      com.icc.web.netty.protobuf3.ResponseHeaderList> getFindRequestStreamMethod() {
+    io.grpc.MethodDescriptor<com.icc.web.netty.protobuf3.RequestHeader, com.icc.web.netty.protobuf3.ResponseHeaderList> getFindRequestStreamMethod;
+    if ((getFindRequestStreamMethod = PersonServiceGrpc.getFindRequestStreamMethod) == null) {
+      synchronized (PersonServiceGrpc.class) {
+        if ((getFindRequestStreamMethod = PersonServiceGrpc.getFindRequestStreamMethod) == null) {
+          PersonServiceGrpc.getFindRequestStreamMethod = getFindRequestStreamMethod = 
+              io.grpc.MethodDescriptor.<com.icc.web.netty.protobuf3.RequestHeader, com.icc.web.netty.protobuf3.ResponseHeaderList>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.CLIENT_STREAMING)
+              .setFullMethodName(generateFullMethodName(
+                  "com.icc.web.netty.protobuf3.PersonService", "findRequestStream"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.icc.web.netty.protobuf3.RequestHeader.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.icc.web.netty.protobuf3.ResponseHeaderList.getDefaultInstance()))
+                  .setSchemaDescriptor(new PersonServiceMethodDescriptorSupplier("findRequestStream"))
+                  .build();
+          }
+        }
+     }
+     return getFindRequestStreamMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.icc.web.netty.protobuf3.RequestHeader,
+      com.icc.web.netty.protobuf3.ResponseHeader> getFindResponseStreamMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "findResponseStream",
+      requestType = com.icc.web.netty.protobuf3.RequestHeader.class,
+      responseType = com.icc.web.netty.protobuf3.ResponseHeader.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
+  public static io.grpc.MethodDescriptor<com.icc.web.netty.protobuf3.RequestHeader,
+      com.icc.web.netty.protobuf3.ResponseHeader> getFindResponseStreamMethod() {
+    io.grpc.MethodDescriptor<com.icc.web.netty.protobuf3.RequestHeader, com.icc.web.netty.protobuf3.ResponseHeader> getFindResponseStreamMethod;
+    if ((getFindResponseStreamMethod = PersonServiceGrpc.getFindResponseStreamMethod) == null) {
+      synchronized (PersonServiceGrpc.class) {
+        if ((getFindResponseStreamMethod = PersonServiceGrpc.getFindResponseStreamMethod) == null) {
+          PersonServiceGrpc.getFindResponseStreamMethod = getFindResponseStreamMethod = 
+              io.grpc.MethodDescriptor.<com.icc.web.netty.protobuf3.RequestHeader, com.icc.web.netty.protobuf3.ResponseHeader>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
+              .setFullMethodName(generateFullMethodName(
+                  "com.icc.web.netty.protobuf3.PersonService", "findResponseStream"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.icc.web.netty.protobuf3.RequestHeader.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.icc.web.netty.protobuf3.ResponseHeader.getDefaultInstance()))
+                  .setSchemaDescriptor(new PersonServiceMethodDescriptorSupplier("findResponseStream"))
+                  .build();
+          }
+        }
+     }
+     return getFindResponseStreamMethod;
+  }
+
+  private static volatile io.grpc.MethodDescriptor<com.icc.web.netty.protobuf3.RequestHeader,
+      com.icc.web.netty.protobuf3.ResponseHeader> getFindReqResStreamMethod;
+
+  @io.grpc.stub.annotations.RpcMethod(
+      fullMethodName = SERVICE_NAME + '/' + "findReqResStream",
+      requestType = com.icc.web.netty.protobuf3.RequestHeader.class,
+      responseType = com.icc.web.netty.protobuf3.ResponseHeader.class,
+      methodType = io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING)
+  public static io.grpc.MethodDescriptor<com.icc.web.netty.protobuf3.RequestHeader,
+      com.icc.web.netty.protobuf3.ResponseHeader> getFindReqResStreamMethod() {
+    io.grpc.MethodDescriptor<com.icc.web.netty.protobuf3.RequestHeader, com.icc.web.netty.protobuf3.ResponseHeader> getFindReqResStreamMethod;
+    if ((getFindReqResStreamMethod = PersonServiceGrpc.getFindReqResStreamMethod) == null) {
+      synchronized (PersonServiceGrpc.class) {
+        if ((getFindReqResStreamMethod = PersonServiceGrpc.getFindReqResStreamMethod) == null) {
+          PersonServiceGrpc.getFindReqResStreamMethod = getFindReqResStreamMethod = 
+              io.grpc.MethodDescriptor.<com.icc.web.netty.protobuf3.RequestHeader, com.icc.web.netty.protobuf3.ResponseHeader>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.BIDI_STREAMING)
+              .setFullMethodName(generateFullMethodName(
+                  "com.icc.web.netty.protobuf3.PersonService", "findReqResStream"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.icc.web.netty.protobuf3.RequestHeader.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.icc.web.netty.protobuf3.ResponseHeader.getDefaultInstance()))
+                  .setSchemaDescriptor(new PersonServiceMethodDescriptorSupplier("findReqResStream"))
+                  .build();
+          }
+        }
+     }
+     return getFindReqResStreamMethod;
+  }
+
   /**
    * Creates a new async stub that supports all call types for the service
    */
@@ -93,6 +189,27 @@ public final class PersonServiceGrpc {
       asyncUnimplementedUnaryCall(getFindMethod(), responseObserver);
     }
 
+    /**
+     */
+    public io.grpc.stub.StreamObserver<com.icc.web.netty.protobuf3.RequestHeader> findRequestStream(
+        io.grpc.stub.StreamObserver<com.icc.web.netty.protobuf3.ResponseHeaderList> responseObserver) {
+      return asyncUnimplementedStreamingCall(getFindRequestStreamMethod(), responseObserver);
+    }
+
+    /**
+     */
+    public void findResponseStream(com.icc.web.netty.protobuf3.RequestHeader request,
+        io.grpc.stub.StreamObserver<com.icc.web.netty.protobuf3.ResponseHeader> responseObserver) {
+      asyncUnimplementedUnaryCall(getFindResponseStreamMethod(), responseObserver);
+    }
+
+    /**
+     */
+    public io.grpc.stub.StreamObserver<com.icc.web.netty.protobuf3.RequestHeader> findReqResStream(
+        io.grpc.stub.StreamObserver<com.icc.web.netty.protobuf3.ResponseHeader> responseObserver) {
+      return asyncUnimplementedStreamingCall(getFindReqResStreamMethod(), responseObserver);
+    }
+
     @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
@@ -102,6 +219,27 @@ public final class PersonServiceGrpc {
                 com.icc.web.netty.protobuf3.RequestHeader,
                 com.icc.web.netty.protobuf3.ResponseHeader>(
                   this, METHODID_FIND)))
+          .addMethod(
+            getFindRequestStreamMethod(),
+            asyncClientStreamingCall(
+              new MethodHandlers<
+                com.icc.web.netty.protobuf3.RequestHeader,
+                com.icc.web.netty.protobuf3.ResponseHeaderList>(
+                  this, METHODID_FIND_REQUEST_STREAM)))
+          .addMethod(
+            getFindResponseStreamMethod(),
+            asyncServerStreamingCall(
+              new MethodHandlers<
+                com.icc.web.netty.protobuf3.RequestHeader,
+                com.icc.web.netty.protobuf3.ResponseHeader>(
+                  this, METHODID_FIND_RESPONSE_STREAM)))
+          .addMethod(
+            getFindReqResStreamMethod(),
+            asyncBidiStreamingCall(
+              new MethodHandlers<
+                com.icc.web.netty.protobuf3.RequestHeader,
+                com.icc.web.netty.protobuf3.ResponseHeader>(
+                  this, METHODID_FIND_REQ_RES_STREAM)))
           .build();
     }
   }
@@ -131,6 +269,30 @@ public final class PersonServiceGrpc {
       asyncUnaryCall(
           getChannel().newCall(getFindMethod(), getCallOptions()), request, responseObserver);
     }
+
+    /**
+     */
+    public io.grpc.stub.StreamObserver<com.icc.web.netty.protobuf3.RequestHeader> findRequestStream(
+        io.grpc.stub.StreamObserver<com.icc.web.netty.protobuf3.ResponseHeaderList> responseObserver) {
+      return asyncClientStreamingCall(
+          getChannel().newCall(getFindRequestStreamMethod(), getCallOptions()), responseObserver);
+    }
+
+    /**
+     */
+    public void findResponseStream(com.icc.web.netty.protobuf3.RequestHeader request,
+        io.grpc.stub.StreamObserver<com.icc.web.netty.protobuf3.ResponseHeader> responseObserver) {
+      asyncServerStreamingCall(
+          getChannel().newCall(getFindResponseStreamMethod(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     */
+    public io.grpc.stub.StreamObserver<com.icc.web.netty.protobuf3.RequestHeader> findReqResStream(
+        io.grpc.stub.StreamObserver<com.icc.web.netty.protobuf3.ResponseHeader> responseObserver) {
+      return asyncBidiStreamingCall(
+          getChannel().newCall(getFindReqResStreamMethod(), getCallOptions()), responseObserver);
+    }
   }
 
   /**
@@ -156,6 +318,14 @@ public final class PersonServiceGrpc {
     public com.icc.web.netty.protobuf3.ResponseHeader find(com.icc.web.netty.protobuf3.RequestHeader request) {
       return blockingUnaryCall(
           getChannel(), getFindMethod(), getCallOptions(), request);
+    }
+
+    /**
+     */
+    public java.util.Iterator<com.icc.web.netty.protobuf3.ResponseHeader> findResponseStream(
+        com.icc.web.netty.protobuf3.RequestHeader request) {
+      return blockingServerStreamingCall(
+          getChannel(), getFindResponseStreamMethod(), getCallOptions(), request);
     }
   }
 
@@ -187,6 +357,9 @@ public final class PersonServiceGrpc {
   }
 
   private static final int METHODID_FIND = 0;
+  private static final int METHODID_FIND_RESPONSE_STREAM = 1;
+  private static final int METHODID_FIND_REQUEST_STREAM = 2;
+  private static final int METHODID_FIND_REQ_RES_STREAM = 3;
 
   private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -209,6 +382,10 @@ public final class PersonServiceGrpc {
           serviceImpl.find((com.icc.web.netty.protobuf3.RequestHeader) request,
               (io.grpc.stub.StreamObserver<com.icc.web.netty.protobuf3.ResponseHeader>) responseObserver);
           break;
+        case METHODID_FIND_RESPONSE_STREAM:
+          serviceImpl.findResponseStream((com.icc.web.netty.protobuf3.RequestHeader) request,
+              (io.grpc.stub.StreamObserver<com.icc.web.netty.protobuf3.ResponseHeader>) responseObserver);
+          break;
         default:
           throw new AssertionError();
       }
@@ -219,6 +396,12 @@ public final class PersonServiceGrpc {
     public io.grpc.stub.StreamObserver<Req> invoke(
         io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
+        case METHODID_FIND_REQUEST_STREAM:
+          return (io.grpc.stub.StreamObserver<Req>) serviceImpl.findRequestStream(
+              (io.grpc.stub.StreamObserver<com.icc.web.netty.protobuf3.ResponseHeaderList>) responseObserver);
+        case METHODID_FIND_REQ_RES_STREAM:
+          return (io.grpc.stub.StreamObserver<Req>) serviceImpl.findReqResStream(
+              (io.grpc.stub.StreamObserver<com.icc.web.netty.protobuf3.ResponseHeader>) responseObserver);
         default:
           throw new AssertionError();
       }
@@ -271,6 +454,9 @@ public final class PersonServiceGrpc {
           serviceDescriptor = result = io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
               .setSchemaDescriptor(new PersonServiceFileDescriptorSupplier())
               .addMethod(getFindMethod())
+              .addMethod(getFindRequestStreamMethod())
+              .addMethod(getFindResponseStreamMethod())
+              .addMethod(getFindReqResStreamMethod())
               .build();
         }
       }

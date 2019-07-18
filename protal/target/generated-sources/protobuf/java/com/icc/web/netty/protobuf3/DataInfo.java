@@ -24,6 +24,16 @@ public final class DataInfo {
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_com_icc_web_netty_protobuf3_ResponseHeader_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_icc_web_netty_protobuf3_ResponseHeaderList_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_com_icc_web_netty_protobuf3_ResponseHeaderList_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_com_icc_web_netty_protobuf3_RequestHeaderList_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_com_icc_web_netty_protobuf3_RequestHeaderList_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -35,11 +45,24 @@ public final class DataInfo {
     java.lang.String[] descriptorData = {
       "\n\014Person.proto\022\033com.icc.web.netty.protob" +
       "uf3\"\033\n\rRequestHeader\022\n\n\002id\030\001 \001(\005\"\034\n\016Resp" +
-      "onseHeader\022\n\n\002id\030\001 \001(\0052r\n\rPersonService\022" +
-      "a\n\004find\022*.com.icc.web.netty.protobuf3.Re" +
-      "questHeader\032+.com.icc.web.netty.protobuf" +
-      "3.ResponseHeader\"\000B)\n\033com.icc.web.netty." +
-      "protobuf3B\010DataInfoP\001b\006proto3"
+      "onseHeader\022\n\n\002id\030\001 \001(\005\"S\n\022ResponseHeader" +
+      "List\022=\n\010response\030\001 \003(\0132+.com.icc.web.net" +
+      "ty.protobuf3.ResponseHeader\"P\n\021RequestHe" +
+      "aderList\022;\n\007request\030\001 \003(\0132*.com.icc.web." +
+      "netty.protobuf3.RequestHeader2\316\003\n\rPerson" +
+      "Service\022a\n\004find\022*.com.icc.web.netty.prot" +
+      "obuf3.RequestHeader\032+.com.icc.web.netty." +
+      "protobuf3.ResponseHeader\"\000\022t\n\021findReques" +
+      "tStream\022*.com.icc.web.netty.protobuf3.Re" +
+      "questHeader\032/.com.icc.web.netty.protobuf" +
+      "3.ResponseHeaderList\"\000(\001\022q\n\022findResponse" +
+      "Stream\022*.com.icc.web.netty.protobuf3.Req" +
+      "uestHeader\032+.com.icc.web.netty.protobuf3" +
+      ".ResponseHeader\"\0000\001\022q\n\020findReqResStream\022" +
+      "*.com.icc.web.netty.protobuf3.RequestHea" +
+      "der\032+.com.icc.web.netty.protobuf3.Respon" +
+      "seHeader\"\000(\0010\001B)\n\033com.icc.web.netty.prot" +
+      "obuf3B\010DataInfoP\001b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -65,6 +88,18 @@ public final class DataInfo {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_com_icc_web_netty_protobuf3_ResponseHeader_descriptor,
         new java.lang.String[] { "Id", });
+    internal_static_com_icc_web_netty_protobuf3_ResponseHeaderList_descriptor =
+      getDescriptor().getMessageTypes().get(2);
+    internal_static_com_icc_web_netty_protobuf3_ResponseHeaderList_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_com_icc_web_netty_protobuf3_ResponseHeaderList_descriptor,
+        new java.lang.String[] { "Response", });
+    internal_static_com_icc_web_netty_protobuf3_RequestHeaderList_descriptor =
+      getDescriptor().getMessageTypes().get(3);
+    internal_static_com_icc_web_netty_protobuf3_RequestHeaderList_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_com_icc_web_netty_protobuf3_RequestHeaderList_descriptor,
+        new java.lang.String[] { "Request", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

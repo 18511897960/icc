@@ -15,4 +15,18 @@ message ResponseHeader {
 
 service PersonService {
     rpc find(RequestHeader)  returns (ResponseHeader){}
+
+    rpc findRequestStream(stream RequestHeader) returns (ResponseHeaderList){}
+
+    rpc findResponseStream(RequestHeader) returns (stream ResponseHeader){}
+
+    rpc findReqResStream(stream RequestHeader) returns (stream ResponseHeader){}
+}
+
+message ResponseHeaderList {
+    repeated ResponseHeader response = 1;
+}
+
+message RequestHeaderList {
+    repeated RequestHeader request = 1;
 }
