@@ -6,12 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="icc.application" />
-        <module name="icc.application.impl" />
-        <module name="icc.commons" />
-        <module name="icc.login" />
-        <module name="icc.messages" />
-        <module name="icc.portal" />
+        <module name="commons" />
+        <module name="messages" />
+        <module name="protal" />
+        <module name="provider" />
+        <module name="support" />
+        <module name="website" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

@@ -7,9 +7,9 @@
 		<version>0.0.1-SNAPSHOT</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
-  <artifactId>icc.portal</artifactId>
+  <artifactId>icc.protal</artifactId>
   <packaging>war</packaging>
-  <name>Portal</name>
+  <name>Protal</name>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
