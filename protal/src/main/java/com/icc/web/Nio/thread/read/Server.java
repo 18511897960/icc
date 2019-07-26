@@ -135,6 +135,7 @@ public class Server {
         Reader(int i) throws IOException {
             setName("Reader-" + i);
             this.readSelector = Selector.open();
+
             System.out.println("Starting Reader-" + i + "...");
         }
 
@@ -144,7 +145,8 @@ public class Server {
             while(running) {
                 try {
                     //
-                    readSelector.select();
+                    int num = readSelector.select();
+                    System.out.println("readSelectorNum :" + num);
 
                     //这添加同步代码块的原因应该是，为了防止connection对象，没构造完，而读事件却触发了、
                     while(adding) {
@@ -193,7 +195,6 @@ public class Server {
                 c.close();
             }
         }
-
         //socketChannel向readSelector注册可读事件
         public SelectionKey registerChannel(SocketChannel channel) throws IOException {
             return channel.register(readSelector, SelectionKey.OP_READ);
@@ -325,6 +326,7 @@ public class Server {
                         try {
                             //注册写事件，并将call对象作为附件
                             call.conn.channel.register(writeSelector, SelectionKey.OP_WRITE, call);
+
                         } catch (ClosedChannelException e) {
                             //the client went away
                             System.out.println("the client went away 。。。");
@@ -332,6 +334,7 @@ public class Server {
 
                         }
                     } else {
+                        System.out.println("key.interest" + key.interestOps());
                         key.interestOps(SelectionKey.OP_WRITE);
                     }
                 } catch (CancelledKeyException e) {
@@ -401,6 +404,7 @@ public class Server {
             setName("handler-" + i);
             System.out.println("Starting Handler-" + i + "...");
         }
+
 
         public void run() {
             while(running) {

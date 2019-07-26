@@ -40,7 +40,7 @@ public class Client {
 
     //启动200个线程向服务器进行通讯，客户端采用阻塞的socket
     public static void main(String[] args) throws IOException {
-        int n = 200;
+        int n = 2;
         for(int i = 0; i < n; i++) {
             new Thread() {
                 Client client = new Client();

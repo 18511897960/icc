@@ -1,88 +1,69 @@
 package com.icc.web.Nio.thread;
 
+import java.nio.ByteBuffer;
 import java.nio.channels.SelectionKey;
 import java.nio.channels.Selector;
+import java.nio.channels.SocketChannel;
 import java.util.Iterator;
 
+//用来处理客户端的可读事件
 public class Reader extends Thread {
+    Selector selector;
+    boolean skipHeader;
+    ByteBuffer readBuffer;
 
-    Selector Rselector ;
-    boolean adding;
-    Reader(int i) throws Exception
-    {
+    public Reader(int i) throws Exception {
         setName("Reader-" + i);
-        Rselector = Selector.open();
-        System.out.println(getName()+" start ...");
+        selector = Selector.open();
+    }
 
+    public void registerChannel(SocketChannel socketChannel) throws Exception {
+
+        socketChannel.register(selector, SelectionKey.OP_READ);
     }
 
     @Override
     public void run() {
-        while (Server.running)
-        {
+        while (Server.running) {
             try {
-                Rselector.select();
-
-                while (adding)
-                {
-                    synchronized (this)
-                    {
-                        wait(1000);
+                selector.select();
+                Iterator<SelectionKey> keys = selector.selectedKeys().iterator();
+                while (keys.hasNext()) {
+                    SelectionKey key = keys.next();
+                    if (key.isValid() && key.isReadable()) {
+                        read(key);
                     }
                 }
 
-                Iterator<SelectionKey> iterator = Rselector.selectedKeys().iterator();
-                while (iterator.hasNext())
-                {
-                    SelectionKey nextKey = iterator.next();
-                    iterator.remove();
-                    if (nextKey.isValid())
-                    {
-                        if(nextKey.isReadable())
-                        {
-                            doRead(nextKey);
-
-                        }
-                    }
-                }
-            } catch (Exception e)
-            {
+            } catch (Exception e) {
                 e.printStackTrace();
-            }finally {
-
             }
+
+
         }
     }
 
-    private void doRead(SelectionKey nextKey) throws Exception {
-        Connection connection = (Connection) nextKey.attachment();
-        if(null != connection)
-        {
-            return;
-        }
-        int n;
+    private void read(SelectionKey key) throws Exception {
+        SocketChannel channel = (SocketChannel) key.channel();
+        ByteBuffer messageLengthBuffer = ByteBuffer.allocate(4);
         try {
-            n = connection.process();
+            int reads;
+            if (!skipHeader) {
+                reads = Server.readChannel(channel, messageLengthBuffer);
+                skipHeader = true;
+            }
+
+            if(null == readBuffer) {
+                messageLengthBuffer.flip();
+                int length = messageLengthBuffer.getInt();
+                readBuffer = ByteBuffer.allocate(length);
+            }
+            reads = Server.readChannel(channel,readBuffer);
+
         } catch (Exception e) {
+            channel.close();
             e.printStackTrace();
-            n = -1;
         }
-        if(-1 == n)
-        {
-            connection.close();
-        }
-
-    }
-
-    public void put()
-    {
-        adding = true;
-        Rselector.wakeup();
-    }
-
-    public synchronized void remove()
-    {
-        adding = false;
-        this.notifyAll();
+        channel.close();
     }
 }
